@@ -28,7 +28,7 @@
 
 html {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 h2 {
@@ -51,7 +51,9 @@ h3 {
 
 
 h2 {
-  padding: 20px 0;
+  padding: 40px 0;
+  text-align: center;
+
 }
 
 /*******************
@@ -71,6 +73,10 @@ header i {
   font-size: 2rem;
   margin: 10px;
 
+}
+
+header img {
+  display: none;
 }
 
 nav {
@@ -93,7 +99,7 @@ nav {
 /*******************
   ABOUT STYLES
 *******************/
-
+/*
 .about-container {
   display: flex;
   flex-direction: column;
@@ -109,7 +115,7 @@ nav {
 
 .about-info {
   margin: 20px;
-}
+}*/
 
 
 
@@ -118,27 +124,10 @@ nav {
 *******************/
 
 .work-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.work-head {
-  align-self: center;
-}
-
-.project-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-}
-
-.project-images img {
-  align-self: center;
-  width: 90vw;
-  padding: 10px 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
 
@@ -147,6 +136,7 @@ nav {
 *******************/
 
 .personal-container {
+
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 1rem;
@@ -156,12 +146,58 @@ nav {
   max-width: 100%;
 }
 
+.cell {
+  margin: 1rem;
+}
 
 .cell img {
   display: block;
 }
 
 
+
+/*******************
+  CONTACT STYLES
+*******************/
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  padding: 20px 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+i {
+  color: black;
+  font-size: 3rem;
+  padding: 10px 0;
+}
+
+.fa-medium-m:hover {
+  color: #FF0067;
+}
+
+.fa-twitter:hover {
+  color: #00FF9D;
+}
+
+.fa-instagram:hover {
+  color: #9000B9;
+}
+
+.fa-linkedin-in:hover {
+  color:#FFB400;
+}
 
 
 /*******************
@@ -182,12 +218,49 @@ nav {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*600px break point*/
 @media (min-width: 600px) {
+
+
+/*******************
+  FONT STYLES
+*******************/
+
+.about-container,
+.work-container,
+.personal-container,
+.contact {
+  font-size: 1.3rem;
+}
+
+p {
+  padding: 10px 0;
+}
+
+
+/*******************
+  HEADER STYLES
+*******************/
+
 
 header {
   display: flex;
   justify-content: center;
+}
+
+header img {
+/*  align-self: flex-start;*/
+  display: 
 }
 
 
@@ -237,7 +310,9 @@ nav a:active {
   text-decoration-style: 2px wavy;
 }
 
-
+/*******************
+  SPLASH STYLES
+*******************/
 
 
 .splash {
@@ -258,8 +333,52 @@ nav a:active {
   ABOUT STYLES
 *******************/
 
+.about-info {
+  display: flex;
+  flex-direction: column;
 
-.about-container {
+}
+
+/*************************
+  WORK & PERSONAL STYLES
+**************************/
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cell {
+  width: calc(50% - 2rem);
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1000px break point*/
+@media (min-width: 1000px) {
+
+
+/*******************
+  ABOUT STYLES
+*******************/
+
+
+/*.about-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -274,14 +393,13 @@ nav a:active {
   display: flex;
   justify-content: center;
   align-content: center;
-/*  background-color: green;*/
 }
 
 .about-container .text {
-  padding: 0 1.5em;
+  padding: 0 0 0 1.5em;
   align-self: center;
   max-width: 100%;
-  font-size: 1.5rem;
+  max-height: 100vh;
 }
 
 .about-info img {
@@ -291,62 +409,29 @@ nav a:active {
   height: auto;
   align-self: center;
   max-width: 100%;
-}
+}*/
 
-}
-
-
-/*******************
-  WORK STYLES
-*******************/
-
-.work-container {
-  display: flex;
-/*  flex-wrap: wrap;
-  justify-content: center;
-*/  flex-direction: column;
-  height: 100vh;
-}
-
-.work-head {
-  text-align: center;
-  flex-direction: row;
-}
-
-.project-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.project-images img {
-  align-self: center;
-  width: 40%;
-  padding: 10px 10px;
-}
 
 /*******************
   PERSONAL STYLES
 *******************/
 
+.personal-text {
+  padding-bottom: 30px;
+}
 
-.personal-container .grid {
+.grid {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .personal-container .cell {
-  width: 50%;
+  width: calc(33.3333% - 2rem);
+}
+
 }
 
 
-/*1000px break point*/
-@media (min-width: 1000px) {
-
-
-}
 
 
 
