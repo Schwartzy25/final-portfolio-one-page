@@ -342,6 +342,20 @@ nav a:active {
 }
 
 
+/*******************
+  CONTACT STYLES
+*******************/
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
 /*1000px break point*/
 @media (min-width: 1000px) {
 
