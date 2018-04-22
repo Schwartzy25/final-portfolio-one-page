@@ -333,10 +333,17 @@ nav a:active {
   ABOUT STYLES
 *******************/
 
-.about-info {
+.about-container {
   display: flex;
   flex-direction: column;
 
+  height: 100vh;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*************************
