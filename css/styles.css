@@ -179,12 +179,28 @@ nav li {
   flex-direction: row;
   width: 30vw;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 i {
   color: black;
   font-size: 4rem;
+}
+
+.fa-twitter:before {
+  padding: 0 20px;
+}
+
+.fa-linkedin-in:before {
+  padding: 0 20px;  
+}
+
+.fa-instagram:before {
+  padding: 0 20px;  
+}
+
+.fa-medium-m:before {
+  padding: 0 20px;  
 }
 
 .fa-medium-m:hover {
@@ -268,6 +284,7 @@ p {
 header {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 header img {
@@ -294,9 +311,8 @@ ul {
   font-size: 1.8rem;
 }
 
-li {
-  /*background-color: gold;*/
-  /*margin: 0 0.2em;*/
+nav li {
+ padding: 10px 30px;
 }
 
 nav a:link {
